@@ -1,0 +1,14 @@
+iteration 1:
+proof of concept:
+-live storage options:
+write from firebase
+read from firebase
+design data structure for firebase
+implement data structure
+
+-existing accounts:
+set up client model
+create dummy ones
+
+-visitable site:
+figure aws ec2 out

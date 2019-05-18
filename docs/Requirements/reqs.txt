@@ -1,0 +1,11 @@
+-stage one:
+As a student i would like to see cases
+as a student i would like to apply to a case
+as a company i would like to create a case
+
+proof of concept:
+visitable site
+existing accounts
+live storage options
+
+
