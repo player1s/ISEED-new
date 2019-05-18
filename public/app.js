@@ -27,8 +27,7 @@ saveBtn.addEventListener("click", function () {
     console.log("Got error ", error);
 })
 });
-/*
-OLD FASHIONED REFRESH
+
 loadBtn.addEventListener("click", function () {
     docRef.get().then(function (doc) {
         if (doc && doc.exists) {
@@ -38,8 +37,9 @@ loadBtn.addEventListener("click", function () {
         }
     })
 });
-*/
 
+// not getting to the deploy
+/*
 getRealtimeUpdates = function () {
     docRef.onSnapshot(function (doc) {
         if (doc && doc.exists) {
@@ -47,10 +47,10 @@ getRealtimeUpdates = function () {
             outputHeader.innerText = "Hot dog status: " + myData.name;
 
         }
-    })
+    });
 };
 getRealtimeUpdates();
-
+*/
 
 function adds() {
 
