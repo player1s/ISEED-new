@@ -15,6 +15,8 @@ const docRef = firestore.collection("Companies").doc("1");
 const outputHeader = document.querySelector("#hotdogOutput");
 const inputTextField = document.querySelector("#status");
 const saveBtn = document.querySelector("#savebtn");
+const loadBtn = document.querySelector("#loadbtn");
+
 
 saveBtn.addEventListener("click", function () {
     const textToSave = inputTextField.value;
@@ -25,6 +27,16 @@ saveBtn.addEventListener("click", function () {
     console.log("Got error ", error);
 })
 });
+
+loadBtn.addEventListener("click", function () {
+    docRef.get().then(function (doc) {
+        if (doc && doc.exists) {
+            const myData = doc.data();
+            outputHeader.innerText = "Hot dog status: " + myData.name;
+
+        }
+    })
+})
 
 
 function adds() {
