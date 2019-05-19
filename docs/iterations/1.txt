@@ -11,4 +11,4 @@ set up client model
 create dummy ones
 
 -visitable site:
-figure aws ec2 out
+done by firestore
