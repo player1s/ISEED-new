@@ -35,6 +35,7 @@ var firestore = firebase.firestore();
             const promise = auth.signInWithEmailAndPassword(email, pass);
             promise.catch(e => console.log(e.message));
         });
+
         btnCreateAccount.addEventListener("click", function () {
             console.log("in: click eventlistener for btnCreateAccount");
             const email = fieldEmail.value;
@@ -43,6 +44,17 @@ var firestore = firebase.firestore();
 
             const promise = auth.createUserWithEmailAndPassword(email, pass);
             promise.catch(e => console.log(e.message));
+
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                    user.sendEmailVerification().then(function () {
+                        console.log("email sent")
+                    }).catch(function (error) {
+                        console.log("verification email error " + error)
+                    });
+                }
+
+            })
         });
 
         btnLogout.addEventListener("click", function () {
