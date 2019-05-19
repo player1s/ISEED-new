@@ -16,14 +16,15 @@
   <!-- include only the Firebase features as you need -->
   <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
-
+  <script src="app.js"></script>
 
 
   <p id="hotdogOutput">hotdog:</p>
   <input type="text" id="status">
   <button id="savebtn" >save</button>
   <button id="loadbtn" >load</button>
-  <script src="app.js"></script>
+  <a href="404.html"><button id="pageSwitchbtn">switch page</button></a>
+
   <br>
   <br>
 
@@ -32,6 +33,7 @@
   <button id="btnLogin" class="btn btn-action">Login</button>
   <button id="btnCreateAccount" class="btn btn-secondary">CreateAccount</button>
   <button id="btnLogout" class="btn btn-action" hidden>Logout</button>
+  <p id="feedback"></p>
 
   </body>
 </html>
