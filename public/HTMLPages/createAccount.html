@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+<script src="../JavascriptFiles/firebaseConfig.js"></script>
+<script src="../JavascriptFiles/createAccount.js"></script>
+
+
+    <input type="email" id="createAccountFieldEmail" placeholder="Email"><br>
+    <input type="password" id="createAccountFieldPassword" placeholder="Password"><br>
+
+    <input type="text" id="createAccountFieldName" placeholder="name"><br>
+
+    <input type="radio" id="createAccountRadioStudent" name="type" value="student" checked> Student<br>
+    <input type="radio" id="createAccountRadioEducationalInstitute" name="type" value="educationalInstitution"> Educational Institution<br>
+    <input type="radio" id="createAccountRadioCompany" name="type" value="company"> company<br>
+
+    <button id="createAccountBtnCreateAccount">CreateAccount</button>
+
+<p id="createAccountFeedback"></p>
+
+</body>
+</html>
