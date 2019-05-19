@@ -116,8 +116,5 @@ var firestore = firebase.firestore();
         */
 
 
-        pageSwitchbtn.addEventListener("click", function () {
-            console.log("in: click eventlistener for pageSwitchbtn");
-            window.location = /404;
-        });
+
     };
