@@ -15,9 +15,7 @@ window.onload=function() {
         const email = fieldEmail.value;
         const pass = fieldPassword.value;
         const auth = firebase.auth();
-        let num = null;
         let myData = null;
-
 
         //firestore.collection("Companies").doc("1").set({currentAmountOfDocs: num});
 
@@ -26,29 +24,36 @@ window.onload=function() {
 
                 if(document.getElementById("createAccountRadioCompany").checked)
                 {
-
                     console.log("in: click eventlistener for btnCreateAccount");
-
-                    let three = 3;
-                    three = three.toString();
-
+                    let docBaseRef = firestore.collection("Companies").doc("0");
+                    let num = null;
                     const increment = firebase.firestore.FieldValue.increment(1);
+                    docBaseRef.update({ currentAmountOfDocs: increment}).then(function () {
 
-// Document reference
-                    let docBaseRef = firestore.collection("Companies").doc("1");
+                        docBaseRef.get().then(function (doc) {
 
-// Update read count
-                    docBaseRef.update({ currentAmountOfDocs: increment });
+                            console.log(doc);
+                            console.log(doc.exists);
+                            console.log(doc._hasPendingWrites);
 
+                            if (doc && doc.exists && !doc._hasPendingWrites) {
+                                console.log("entered");
 
-                    let docRef = firestore.collection("Companies").doc(three);
-                    docRef.set({name: "wazze"}).then(function () {
-                        console.log("status saved!");
-                    }).catch(function (error) {
-                        console.log("Got error ", error);
-                    })
+                                console.log(doc.data().currentAmountOfDocs.toString());
+                                num = doc.data().currentAmountOfDocs.toString();
 
+                                const docRef = firestore.collection("Companies").doc(num);
 
+                                docRef.set({name: "wazze"}).then(function () {
+                                    console.log("status saved!");
+
+                                }).catch(function (error) {
+                                    console.log("Got error ", error);
+                                })
+                            }
+                        });
+
+                    });
 
                 }
 
@@ -57,7 +62,6 @@ window.onload=function() {
             createAccountFeedback.innerText = e.message;
             console.log(e.message);
         });
-
 
     });
 
