@@ -14,6 +14,7 @@ window.onload=function() {
         console.log("in: click eventlistener for btnCreateAccount");
         const email = fieldEmail.value;
         const pass = fieldPassword.value;
+        const name = createAccountFieldName.value;
         const auth = firebase.auth();
         let myData = null;
 
@@ -22,9 +23,9 @@ window.onload=function() {
 
         const promise = auth.createUserWithEmailAndPassword(email, pass).then( function () {
 
-                if(document.getElementById("createAccountRadioCompany").checked)
+                if(createAccountRadioCompany.checked)
                 {
-                    console.log("in: click eventlistener for btnCreateAccount");
+                    console.log("in: click eventlistener for btnCreateAccount in createAccountRadioCompany");
                     let docBaseRef = firestore.collection("Companies").doc("0");
                     let num = null;
                     const increment = firebase.firestore.FieldValue.increment(1);
@@ -44,7 +45,7 @@ window.onload=function() {
 
                                 const docRef = firestore.collection("Companies").doc(num);
 
-                                docRef.set({name: "wazze"}).then(function () {
+                                docRef.set({name: name}).then(function () {
                                     console.log("status saved!");
 
                                 }).catch(function (error) {
@@ -56,6 +57,74 @@ window.onload=function() {
                     });
 
                 }
+
+            if(createAccountRadioEducationalInstitute.checked) {
+                console.log("in: click eventlistener for btnCreateAccount in createAccountRadioEducationalInstitute");
+                let docBaseRef = firestore.collection("Educational Institutions").doc("0");
+                let num = null;
+                const increment = firebase.firestore.FieldValue.increment(1);
+                docBaseRef.update({currentAmountOfDocs: increment}).then(function () {
+
+                    docBaseRef.get().then(function (doc) {
+
+                        console.log(doc);
+                        console.log(doc.exists);
+                        console.log(doc._hasPendingWrites);
+
+                        if (doc && doc.exists && !doc._hasPendingWrites) {
+                            console.log("entered");
+
+                            console.log(doc.data().currentAmountOfDocs.toString());
+                            num = doc.data().currentAmountOfDocs.toString();
+
+                            const docRef = firestore.collection("Educational Institutions").doc(num);
+
+                            docRef.set({name: name}).then(function () {
+                                console.log("status saved!");
+
+                            }).catch(function (error) {
+                                console.log("Got error ", error);
+                            })
+                        }
+                    });
+
+                });
+
+            }
+
+            if(createAccountRadioStudent.checked) {
+                console.log("in: click eventlistener for btnCreateAccount in createAccountRadioStudent");
+                let docBaseRef = firestore.collection("Students").doc("0");
+                let num = null;
+                const increment = firebase.firestore.FieldValue.increment(1);
+                docBaseRef.update({currentAmountOfDocs: increment}).then(function () {
+
+                    docBaseRef.get().then(function (doc) {
+
+                        console.log(doc);
+                        console.log(doc.exists);
+                        console.log(doc._hasPendingWrites);
+
+                        if (doc && doc.exists && !doc._hasPendingWrites) {
+                            console.log("entered");
+
+                            console.log(doc.data().currentAmountOfDocs.toString());
+                            num = doc.data().currentAmountOfDocs.toString();
+
+                            const docRef = firestore.collection("Students").doc(num);
+
+                            docRef.set({name: name}).then(function () {
+                                console.log("status saved!");
+
+                            }).catch(function (error) {
+                                console.log("Got error ", error);
+                            })
+                        }
+                    });
+
+                });
+
+            }
 
         });
         promise.catch(function(e) {
