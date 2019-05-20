@@ -32,9 +32,17 @@ window.onload=function() {
                     let three = 3;
                     three = three.toString();
 
+                    const increment = firebase.firestore.FieldValue.increment(1);
+
+// Document reference
+                    let docBaseRef = firestore.collection("Companies").doc("1");
+
+// Update read count
+                    docBaseRef.update({ currentAmountOfDocs: increment });
+
 
                     let docRef = firestore.collection("Companies").doc(three);
-                    docRef.set({name: "wazz"}).then(function () {
+                    docRef.set({name: "wazze"}).then(function () {
                         console.log("status saved!");
                     }).catch(function (error) {
                         console.log("Got error ", error);
