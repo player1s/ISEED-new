@@ -29,7 +29,11 @@ window.onload=function() {
 
                     console.log("in: click eventlistener for btnCreateAccount");
 
-                    let docRef = firestore.collection("Companies").doc("2");
+                    let three = 3;
+                    three = three.toString();
+
+
+                    let docRef = firestore.collection("Companies").doc(three);
                     docRef.set({name: "wazz"}).then(function () {
                         console.log("status saved!");
                     }).catch(function (error) {
