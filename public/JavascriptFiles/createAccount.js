@@ -8,7 +8,6 @@ window.onload=function() {
     const createAccountRadioEducationalInstitute = document.getElementById('createAccountRadioEducationalInstitute');
     const createAccountRadioCompany = document.getElementById('createAccountRadioCompany');
     const createAccountFeedback = document.getElementById('createAccountFeedback');
-    let size = null;
 
     createAccountBtnCreateAccount.addEventListener("click", function () {
         console.log("in: click eventlistener for btnCreateAccount");
@@ -16,9 +15,7 @@ window.onload=function() {
         const pass = fieldPassword.value;
         const name = createAccountFieldName.value;
         const auth = firebase.auth();
-        let myData = null;
-
-        //firestore.collection("Companies").doc("1").set({currentAmountOfDocs: num});
+        let type = null;
 
 
         const promise = auth.createUserWithEmailAndPassword(email, pass).then( function () {
@@ -26,95 +23,45 @@ window.onload=function() {
                 if(createAccountRadioCompany.checked)
                 {
                     console.log("in: click eventlistener for btnCreateAccount in createAccountRadioCompany");
-                    let docBaseRef = firestore.collection("Companies").doc("0");
-                    let num = null;
-                    const increment = firebase.firestore.FieldValue.increment(1);
-                    docBaseRef.update({ currentAmountOfDocs: increment}).then(function () {
+                    const user = firebase.auth().currentUser;
+                    type = "Company";
+                    let docBaseRef = firestore.collection("Users").doc(user.uid);
 
-                        docBaseRef.get().then(function (doc) {
+                    docBaseRef.set({name: name, type: type}).then(function () {
+                        console.log("these items were saved: Name: " + name + " Type: " + type);
+                        window.location.href="loggedInCompany.html";
 
-                            console.log(doc);
-                            console.log(doc.exists);
-                            console.log(doc._hasPendingWrites);
-
-                            if (doc && doc.exists && !doc._hasPendingWrites) {
-                                console.log("entered");
-
-                                console.log(doc.data().currentAmountOfDocs.toString());
-                                num = doc.data().currentAmountOfDocs.toString();
-
-                                const docRef = firestore.collection("Companies").doc(num);
-
-                                docRef.set({name: name}).then(function () {
-                                    console.log("status saved!");
-
-                                }).catch(function (error) {
-                                    console.log("Got error ", error);
-                                })
-                            }
-                        });
-
-                    });
+                    }).catch(function (error) {
+                        console.log("Got error ", error);
+                    })
 
                 }
 
             if(createAccountRadioEducationalInstitute.checked) {
                 console.log("in: click eventlistener for btnCreateAccount in createAccountRadioEducationalInstitute");
-                let docBaseRef = firestore.collection("Educational Institutions").doc("0");
-                let num = null;
-                const increment = firebase.firestore.FieldValue.increment(1);
-                docBaseRef.update({currentAmountOfDocs: increment}).then(function () {
+                const user = firebase.auth().currentUser;
+                type = "EducationalInstitute";
+                let docBaseRef = firestore.collection("Users").doc(user.uid);
 
-                    docBaseRef.get().then(function (doc) {
+                docBaseRef.set({name: name, type: type}).then(function () {
+                    console.log("these items were saved: Name: " + name + " Type: " + type);
+                    window.location.href="loggedInEducationalInstitute.html";
 
-                        console.log(doc);
-                        console.log(doc.exists);
-                        console.log(doc._hasPendingWrites);
-
-                        if (doc && doc.exists && !doc._hasPendingWrites) {
-                            console.log("entered");
-
-                            console.log(doc.data().currentAmountOfDocs.toString());
-                            num = doc.data().currentAmountOfDocs.toString();
-
-                            const docRef = firestore.collection("Educational Institutions").doc(num);
-
-                            docRef.set({name: name}).then(function () {
-                                console.log("status saved!");
-
-                            }).catch(function (error) {
-                                console.log("Got error ", error);
-                            })
-                        }
-                    });
-
-                });
+                }).catch(function (error) {
+                    console.log("Got error ", error);
+                })
 
             }
 
             if(createAccountRadioStudent.checked) {
                 console.log("in: click eventlistener for btnCreateAccount in createAccountRadioStudent");
-                let docBaseRef = firestore.collection("Students").doc("0");
-                let num = null;
-                const increment = firebase.firestore.FieldValue.increment(1);
-                docBaseRef.update({currentAmountOfDocs: increment}).then(function () {
+                const user = firebase.auth().currentUser;
+                type = "Student";
+                let docBaseRef = firestore.collection("Users").doc(user.uid);
 
-                    docBaseRef.get().then(function (doc) {
-
-                        console.log(doc);
-                        console.log(doc.exists);
-                        console.log(doc._hasPendingWrites);
-
-                        if (doc && doc.exists && !doc._hasPendingWrites) {
-                            console.log("entered");
-
-                            console.log(doc.data().currentAmountOfDocs.toString());
-                            num = doc.data().currentAmountOfDocs.toString();
-
-                            const docRef = firestore.collection("Students").doc(num);
-
-                            docRef.set({name: name}).then(function () {
-                                console.log("status saved!");
+                            docBaseRef.set({name: name, type: type}).then(function () {
+                                console.log("these items were saved: Name: " + name + " Type: " + type);
+                                window.location.href="loggedInStudent.html";
 
                             }).catch(function (error) {
                                 console.log("Got error ", error);
@@ -122,11 +69,6 @@ window.onload=function() {
                         }
                     });
 
-                });
-
-            }
-
-        });
         promise.catch(function(e) {
             createAccountFeedback.innerText = e.message;
             console.log(e.message);
