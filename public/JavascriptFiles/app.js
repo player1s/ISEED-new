@@ -28,6 +28,11 @@ var firestore = firebase.firestore();
 
         });
 
+        pageSwitchbtn.addEventListener("click", function () {
+            console.log("in: click eventlistener for btnLogin");
+            window.location.href="login.html";
+        });
+
         btnCreateAccount.addEventListener("click", function () {
             console.log("in: click eventlistener for btnCreateAccount");
             const email = fieldEmail.value;

@@ -2,10 +2,16 @@ window.onload=function() {
     const fieldEmail = document.getElementById('fieldEmail');
     const fieldPassword = document.getElementById('fieldPassword');
     const btnLogin = document.getElementById('btnLogin');
+    const btnCreateAcc = document.getElementById('btnCreateAcc');
     const pFeedback = document.getElementById('feedback');
     let firestore = firebase.firestore();
     let docRef = null;
     let type = null;
+
+    btnCreateAcc.addEventListener("click", function () {
+        console.log("in: click eventlistener for btnLogin");
+        window.location.href="createAccount.html";
+    });
 
     btnLogin.addEventListener("click", function () {
         console.log("in: click eventlistener for btnLogin");
