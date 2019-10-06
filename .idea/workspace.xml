@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="558fda06-cb30-4dbb-8822-e0158197bcfd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Resources/corporationIndex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Resources/studentIndex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Resources/teacherIndex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/one-page-wonder.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/one-page-wonder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/03.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -59,16 +65,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="135" column="30" lean-forward="true" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
+            <state relative-caret-position="66">
+              <caret line="187" column="33" lean-forward="true" selection-start-line="187" selection-start-column="33" selection-end-line="187" selection-end-column="33" />
               <folding>
                 <element signature="e#4782#4788#0" expanded="true" />
                 <element signature="e#4797#4803#0" expanded="true" />
                 <element signature="e#6413#6419#0" expanded="true" />
                 <element signature="e#6428#6434#0" expanded="true" />
-                <element signature="e#7509#7515#0" expanded="true" />
-                <element signature="e#7524#7530#0" expanded="true" />
+                <element signature="e#8406#8412#0" expanded="true" />
+                <element signature="e#8421#8427#0" expanded="true" />
+                <element signature="e#8971#8976#0" expanded="true" />
+                <element signature="e#9257#9262#0" expanded="true" />
+                <element signature="e#9532#9537#0" expanded="true" />
+                <element signature="e#9813#9818#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="160" selection-start-line="160" selection-end-line="160" />
             </state>
           </provider>
         </entry>
@@ -132,6 +151,7 @@
         <option value="$PROJECT_DIR$/public/HTMLPages/loggedInStudent.html" />
         <option value="$PROJECT_DIR$/public/JavascriptFiles/loggedInStudent.js" />
         <option value="$PROJECT_DIR$/public/CSSFiles/Index.css" />
+        <option value="$PROJECT_DIR$/public/css/one-page-wonder.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
@@ -176,6 +196,12 @@
               <item name="ISEED-new" type="b2602c69:ProjectViewProjectNode" />
               <item name="ISEED-new" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ISEED-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ISEED-new" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="HTMLPages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -183,12 +209,6 @@
               <item name="ISEED-new" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="JavascriptFiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ISEED-new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ISEED-new" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,18 +270,18 @@
       <workItem from="1568197259290" duration="5327000" />
       <workItem from="1568214829144" duration="93000" />
       <workItem from="1569872314654" duration="5475000" />
-      <workItem from="1570361746172" duration="2421000" />
+      <workItem from="1570361746172" duration="10481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78301000" />
+    <option name="totallyTimeSpent" value="86361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.062128223" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1526768" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -447,17 +467,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="135" column="30" lean-forward="true" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
+        <state relative-caret-position="66">
+          <caret line="187" column="33" lean-forward="true" selection-start-line="187" selection-start-column="33" selection-end-line="187" selection-end-column="33" />
           <folding>
             <element signature="e#4782#4788#0" expanded="true" />
             <element signature="e#4797#4803#0" expanded="true" />
             <element signature="e#6413#6419#0" expanded="true" />
             <element signature="e#6428#6434#0" expanded="true" />
-            <element signature="e#7509#7515#0" expanded="true" />
-            <element signature="e#7524#7530#0" expanded="true" />
+            <element signature="e#8406#8412#0" expanded="true" />
+            <element signature="e#8421#8427#0" expanded="true" />
+            <element signature="e#8971#8976#0" expanded="true" />
+            <element signature="e#9257#9262#0" expanded="true" />
+            <element signature="e#9532#9537#0" expanded="true" />
+            <element signature="e#9813#9818#0" expanded="true" />
           </folding>
         </state>
       </provider>
