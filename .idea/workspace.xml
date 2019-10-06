@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="558fda06-cb30-4dbb-8822-e0158197bcfd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -59,10 +59,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-476">
-              <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+            <state relative-caret-position="454">
+              <caret line="135" column="30" lean-forward="true" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
               <folding>
-                <element signature="e#4582#4588#0" expanded="true" />
+                <element signature="e#4782#4788#0" expanded="true" />
+                <element signature="e#4797#4803#0" expanded="true" />
+                <element signature="e#6413#6419#0" expanded="true" />
+                <element signature="e#6428#6434#0" expanded="true" />
+                <element signature="e#7509#7515#0" expanded="true" />
+                <element signature="e#7524#7530#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -244,18 +249,19 @@
       <workItem from="1566926959846" duration="1873000" />
       <workItem from="1568197259290" duration="5327000" />
       <workItem from="1568214829144" duration="93000" />
-      <workItem from="1569872314654" duration="4868000" />
+      <workItem from="1569872314654" duration="5475000" />
+      <workItem from="1570361746172" duration="2421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75273000" />
+    <option name="totallyTimeSpent" value="78301000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17184402" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.062128223" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -286,13 +292,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -405,14 +405,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/CSSFiles/styles.css">
+    <entry file="file://$PROJECT_DIR$/public/CSSFiles/styles.css" />
+    <entry file="file://$PROJECT_DIR$/public/CSSFiles/Index.css" />
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
+        <state relative-caret-position="-102" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/CSSFiles/Index.css" />
     <entry file="file://$PROJECT_DIR$/public/HTMLPages/loggedInStudent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -448,17 +447,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+        <state relative-caret-position="454">
+          <caret line="135" column="30" lean-forward="true" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
           <folding>
-            <element signature="e#4582#4588#0" expanded="true" />
+            <element signature="e#4782#4788#0" expanded="true" />
+            <element signature="e#4797#4803#0" expanded="true" />
+            <element signature="e#6413#6419#0" expanded="true" />
+            <element signature="e#6428#6434#0" expanded="true" />
+            <element signature="e#7509#7515#0" expanded="true" />
+            <element signature="e#7524#7530#0" expanded="true" />
           </folding>
         </state>
       </provider>
