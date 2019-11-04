@@ -6,17 +6,17 @@ window.onload=function() {
 
         btnStudent.addEventListener("click", function () {
             console.log("in: click eventlistener for btnStudent");
-            window.location.href="HTMLPages/preLoginStudent.html";
+            window.location.href="HTMLPages/createAccount.html";
         });
 
         btnEducationalInstitute.addEventListener("click", function () {
             console.log("in: click eventlistener for btnEducationalInstitute");
-            window.location.href="HTMLPages/preLoginEducationalInstitute.html";
+            window.location.href="HTMLPages/createAccount.html";
         });
 
         btnCompany.addEventListener("click", function () {
             console.log("in: click eventlistener for btnCompany");
-            window.location.href="HTMLPages/preLoginCompany.html";
+            window.location.href="HTMLPages/createAccount.html";
         });
 
     };
