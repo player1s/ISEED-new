@@ -29,7 +29,7 @@ window.onload=function() {
 
                     docBaseRef.set({name: name, type: type}).then(function () {
                         console.log("these items were saved: Name: " + name + " Type: " + type);
-                        window.location.href="loggedInCompany.html";
+                        window.location.href="company.html";
 
                     }).catch(function (error) {
                         console.log("Got error ", error);
@@ -45,7 +45,7 @@ window.onload=function() {
 
                 docBaseRef.set({name: name, type: type}).then(function () {
                     console.log("these items were saved: Name: " + name + " Type: " + type);
-                    window.location.href="loggedInEducationalInstitute.html";
+                    window.location.href="education.html";
 
                 }).catch(function (error) {
                     console.log("Got error ", error);
@@ -61,7 +61,7 @@ window.onload=function() {
 
                             docBaseRef.set({name: name, type: type}).then(function () {
                                 console.log("these items were saved: Name: " + name + " Type: " + type);
-                                window.location.href="loggedInStudent.html";
+                                window.location.href="student.html";
 
                             }).catch(function (error) {
                                 console.log("Got error ", error);

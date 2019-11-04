@@ -29,13 +29,13 @@ window.onload=function() {
                 }
 
             if(type.localeCompare("Student") === 0) {
-                window.location.href = "loggedInStudent.html";
+                window.location.href = "student.html";
             }
             if(type.localeCompare("EducationalInstitute") === 0) {
-                window.location.href = "loggedInEducationalInstitute.html";
+                window.location.href = "education.html";
             }
             if(type.localeCompare("Company") === 0) {
-                window.location.href = "loggedInCompany.html";
+                window.location.href = "company.html";
             }
             });
         });
