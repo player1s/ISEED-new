@@ -28,6 +28,9 @@ window.onload=function() {
 
 
 };
+
+
+
 /*
 getRealtimeUpdates = function () {
     let firestore = firebase.firestore();
